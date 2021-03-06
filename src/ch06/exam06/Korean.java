@@ -1,4 +1,4 @@
-package ch06.exam05;
+package ch06.exam06;
 
 public class Korean {
 	
@@ -11,21 +11,18 @@ public class Korean {
 	//Constructor Overloading
 	Korean()
 	{
-		System.out.println("Korean()실행");
+		this("아무개",1,"054544");
 	}
 	Korean(String name)
 	{
-		System.out.println("Korean(String name)실행");
-		this.name = name;
+		this(name,1,"1234325");
 	}
 	Korean(String name, String ssn){
-		System.out.println("Korean(String name, String ssn)실행");
-		this.name = name;
-		this.ssn=ssn;
+		this(name,1,ssn);
 	}
 	Korean(String name, int age,String ssn ){
 		this.name = name;
-		this.ssn=ssn;
-		this.age=age;
+		this.ssn = ssn;
+		this.age = age;
 	}
 }
